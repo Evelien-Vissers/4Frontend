@@ -34,7 +34,7 @@ html {
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
+    margin: 20px;
     padding: 0;
     font-weight: normal;
 }
@@ -44,7 +44,7 @@ ol, ul {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -55,6 +55,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
+}
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    background-color: #ED4385;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 
@@ -67,9 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     border: 2px solid black;
 }
-
 .inner-container {
-    flex-basis: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,9 +93,51 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+/*Navigatiebalk*/
+.header-container {
+    background-color:#5722CD;
+}
+.header-inner {
 
+}
+
+.header-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #5722CD;
+}
+.header-navigation ul {
+    display: flex;
+    list-style: none;
+}
+.header-navigation li {
+    margin: 0 15px;
+    color:white;
+}
+.inner-container h1 {
+    text-align: center;
+    background-color: #5722CD;
+    color: white;
+}
+.inner-container p {
+    text-align: center;
+    background-color: #5722CD;
+    color: white;
+}
+.default-button {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ED4385;
+}
 /* --------------- 4.2 Introduction ------------------- */
-
+.inner-container h2 {
+    text-align: center;
+    color: #5722CD;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- *//*////////////////////////
     Table of Contents
     1. Global Styles
