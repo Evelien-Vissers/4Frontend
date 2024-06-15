@@ -23,6 +23,7 @@ Grijs #7A7A7A (voor de service-tegel tekst)*/
         etc.
     5. Media Queries
 ////////////////////////*/
+
 /*CSS Reset*/
 html {
     box-sizing: border-box;
@@ -68,6 +69,11 @@ button {
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+a {
+    color: #5722CD;
+    text-decoration: none;
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 
@@ -94,7 +100,7 @@ button {
 
 /* --------------- 4.1 Header ------------------------- */
 /*Navigatiebalk*/
-.header-container {
+.header-container, footer-container {
     background-color:#5722CD;
 }
 .header-inner {
@@ -120,18 +126,10 @@ button {
     background-color: #5722CD;
     color: white;
 }
-.inner-container p {
+.header-inner p {
     text-align: center;
     background-color: #5722CD;
     color: white;
-}
-.default-button {
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    background-color: #ED4385;
 }
 /* --------------- 4.2 Introduction ------------------- */
 .inner-container h2 {
