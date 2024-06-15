@@ -58,11 +58,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 button {
-    display: flex;
-    flex-direction: column;
+    font-family: inherit;
     align-items: center;
     text-align: center;
-    justify-content: center;
     color: white;
     border: none;
     background-color: #ED4385;
@@ -70,6 +68,9 @@ button {
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+input {
+    font-family: inherit;
 }
 a {
     color: #5722CD;
@@ -94,18 +95,16 @@ a {
     border: 2px dashed deeppink;
 }
 
-/* --------------- 3.2 Other --------------------------- */
-
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-/*Navigatiebalk*/
-.header-container, footer-container {
-    background-color:#5722CD;
+.header-container {
+    background-color: #5722CD;
 }
-.header-inner {
-
+.header-content {
+    width: 600px;
 }
+/*------------------ Navigatiebalk ----------------------*/
 
 .header-navigation {
     width: 100%;
@@ -132,38 +131,80 @@ a {
     color: white;
 }
 /* --------------- 4.2 Introduction ------------------- */
+.introduction-inner {
+    max-width: 800px;
+    text-align: center;
+    padding: 60px;
+}
+
 .inner-container h2 {
     text-align: center;
     color: #5722CD;
 }
-/* ------------------------------- 5. Media Queries -------------------------------- *//*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+/* ------------------------------- 5. Projects -------------------------------- *//*////////////////////////
 
-/* ------------------------------- 1. Global Styles -------------------------------- */
 
-/* ------------------------------- 2. Typography ----------------------------------- */
 
-/* ------------------------------- 3. Layout --------------------------------------- */
 
-/* --------------- 3.1 Reusables ----------------------- */
 
-/* --------------- 3.2 Other --------------------------- */
+ /* -------------------------------6. Block Items ------------------------------*/
+.block-items-container {
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.block-items-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.block-item {
+    flex: 0 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    border: 2px solid #5722CD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.block-item img {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: cover;
+}
+.block-item h4 {
+    color: #5722CD;
+    font-size: 1rem;
+    text-align: left;
+}
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+.block-item p {
+    font-size: 0.5rem;
+    text-align: left;
+}
 
-/* --------------- 4.1 Header ------------------------- */
 
-/* --------------- 4.2 Introduction ------------------- */
+/* --------------------------------7. Form ------------------------------------*/
+.form-container {
+        text-align: center;
+        background-color: #5722CD;
+        color: white;
+}
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+.form.inner {
+        text-align: center;
+        background-color: #5722CD;
+        color: white;
+}
+
+
+/*---------------------------------8. Footer -----------------------------------*/
+.footer-container {
+    background-color: black;
+    color: white;
+}
+.footer-container p {
+    font-size: 0.8rem;
+    margin: 10px;
+}
