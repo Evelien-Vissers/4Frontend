@@ -7,7 +7,6 @@
 </head>
 <body>
 <header class="outer-container header-container">
-    <div class="inner-container header-inner">
         <nav class="header-navigation">
             <ul>
                 <li>Case Studies</li>
@@ -20,11 +19,10 @@
             <h1>Your website is an investment in the success of your business.</h1>
             <p>We are here to help you succeed.</p>
             <button type="button">Let's work together</button>
-        </div>
         <span class="header-content-image">
             <img src="assets/squiggle_line_stripe.svg" alt="Squiggle line stripe image">
         </span>
-    </div>
+        </div>
 </header>
 
 <main>
@@ -41,23 +39,24 @@
         </div>
     </section>
 
+    <section class="project-container">
     <section class="outer-container rolling stone container">
             <div class="text">
                 <h3>Rolling Stone</h3>
-                <img src="assets/squiggle_line.svg" alt="Squiggle line">
+                <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
                 <br>
-                <p>You know Rolling Stone. It's the definitive voice in music, politics and culture. It's a global icon</p>
+                <p>You know Rolling Stone. It's the definitive voice in music, politics and culture. It's a global icon.</p>
                 <br>
                 <a href="view.project">View project</a>
             </div>
-            <div class="image"><img src="assets/work-image-01.jpeg" alt="Rolling Stone Image"></div>
+            <div class="project-image"><img src="assets/work-image-01.jpeg" alt="Rolling Stone Image"></div>
     </section>
 
     <section class="outer-container variety container">
-        <div class="image"><img src="assets/work-image-02.jpeg" alt="Variety Image"></div>
+        <div class="project-image"><img src="assets/work-image-02.jpeg" alt="Variety Image"></div>
         <div class="text">
             <h3>Variety</h3>
-            <img src="assets/squiggle_line.svg" alt="Squiggle line">
+            <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
             <br>
             <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
             <br>
@@ -68,13 +67,14 @@
     <section class="outer-container worth container">
         <div class="text">
             <h3>Worth</h3>
-            <img src="assets/squiggle_line.svg" alt="Squiggle line">
+            <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
             <br>
             <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
             <br>
             <a href="view.project">View project</a>
         </div>
-        <div class="image"><img src="assets/work-image-03.jpeg" alt="Worth Image"></div>
+        <div class="project-image"><img src="assets/work-image-03.jpeg" alt="Worth Image"></div>
+    </section>
     </section>
 
     <section class="outer-container block-items-container">
@@ -112,20 +112,24 @@
         </div>
     </section>
 
-    <form class="outer-container form container">
+
+    <form class="outer-container form-container">
         <div class="inner-container form-inner">
         <h1>Let's work together</h1>
-            <p>Have a question? Let us know!</p>
+            <p>Have a question? Need a quote? Let us know!</p>
             <form onsubmit="form">
-                <p>Name</p>
-                <input type="text" placeholder="Name"/>
-                <br>
-                <p>Email</p>
-                <input type="email" placeholder="Email"/>
-                <br>
-                <p>Message</p>
-                <input type="text" placeholder="Message"/>
-
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
                 <button type="submit">Send</button>
             </form>
 
