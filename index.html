@@ -2,9 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Rekupe Digital Agency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="outer-container header-container">
+        <nav class="header-navigation">
+            <ul>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <h1>Your website is an investment in the success of your business.</h1>
+            <p>We are here to help you succeed.</p>
+            <button type="button">Let's work together</button>
+        <span class="header-content-image">
+            <img src="assets/squiggle_line_stripe.svg" alt="Squiggle line stripe image">
+        </span>
+        </div>
+</header>
+
+<main>
+    <section class="outer-container introduction-container">
+        <div class="inner-container introduction-inner">
+        <h2>Rekupe is a digital agency in Los Angeles.
+            <br><br>
+            We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.
+            <br><br>
+            We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.
+        </h2>
+            <br><br>
+            <p>Have a question? <a href="contact.html">Click here</a> to contact us!</p>
+        </div>
+    </section>
+
+    <section class="case-studies-container">
+
+        <div class="case-studies-content">
+            <div class="text">
+                <h3>Rolling Stone</h3>
+                <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
+                <br>
+                <p>You know Rolling Stone. It's the definitive voice in music, politics and culture. It's a global icon.</p>
+                <br>
+                <a href="view.project">View project</a>
+            </div>
+            <span class="image-wrapper">
+                <img src="assets/work-image-01.jpeg" alt="Rolling Stone Image">
+            </span>
+        </div>
+
+
+    <div class="case-studies-content">
+        <span class="image-wrapper">
+            <img src="assets/work-image-02.jpeg" alt="Variety Image">
+        </span>
+        <div class="text">
+            <h3>Variety</h3>
+            <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
+            <br>
+            <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
+            <br>
+            <a href="view.project">View project</a>
+        </div>
+    </div>
+
+    <div class="case-studies-content">
+        <div class="text">
+            <h3>Worth</h3>
+            <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
+            <br>
+            <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
+            <br>
+            <a href="view.project">View project</a>
+        </div>
+        <span class="image-wrapper"><img src="assets/work-image-03.jpeg" alt="Worth Image"></span>
+    </div>
+
+    </section>
+
+    <section class="outer-block-container">
+            <div class="inner-block-container">
+            <div class="block-item">
+                <img class="image"><img src="assets/icon_web-design.svg" alt="Web Design Image" class="block-item-img"></img>
+                <section id="services">
+                <h4>Web Design</h4>
+                </section>
+                <p>Good web designs is how companies stand out from their competitors. High quality web designs leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line.</p>
+            </div>
+            <div class="block-item">
+                <img class="image"><img src="assets/icon_web-development.svg" alt="Web Development" class="block-item-img"></img>
+                <h4>Web Development</h4>
+                <p>Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites with a mobile first approach and ensure that our code quality is clean, organized and performant. Already have a design but need it developed? We're here to help!</p>
+            </div>
+            <div class="block-item">
+                <img class="image"><img src="assets/icon_ux.svg" alt="User Experience" class="block-item-img"></img>
+                <h4>User Experience</h4>
+                <p>In order to build succesful products you have to understand the user. We create user personas, wireframes and prototypes to test with users. This allows us to gather feedback which helps to shape the product and can quickly eliminate potential risks - saving you time and money.</p>
+            </div>
+            <div class="block-item">
+                <img class="image"><img src="assets/icon_graphic-design.svg" alt="Graphic Design" class="block-item-img"></img>
+                <h4>Logo Design + Branding</h4>
+                <p>Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily recognizable logos and brand identity. The best brands stand out from the crowd by having a clear and unique point of view. We will work with you to understand your vision and help create a unique brand identity and style guide for your company.</p>
+            </div>
+            <div class="block-item">
+                <img class="image"><img src="assets/icon_seo.svg" alt="SEO" class="block-item-img"></img>
+                <h4>SEO</h4>
+                <p>Do you want your site to rank higher in search results? Google is constantly changing their algorithms for how they rank pages. Don't worry about constantly playing catch-up. We will make sure your website is optimized, providing you the best opportunities for organic search exposure.</p>
+            </div>
+            <div class="block-item">
+                <img class="image"><img src="assets/icon_copywriting.svg" alt="Copy Writing" class="block-item-img"></img>
+                <h4>Copy Writing</h4>
+                <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of voice will help you stand out from the crowd and build brand loyalty. We work with you to establish your brand bible and ensure your messaging is focused and targeted.</p>
+            </div>
+        </div>
+    </section>
+
+    <form class="outer-container form-container">
+        <div class="inner-container form-inner">
+            <section id="contact-us">
+        <h1>Let's work together</h1>
+            <p>Have a question? Need a quote? Let us know!</p>
+            <form onsubmit="form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            </section>
+        </div>
+    </form>
+</main>
+
+<footer class="outer-container footer-container">
+    <p>Business website opdracht &copy; NOVI Hogeschool 2022</p>
+</footer>
 
 </body>
 </html>
