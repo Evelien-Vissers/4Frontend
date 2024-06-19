@@ -9,9 +9,9 @@
 <header class="outer-container header-container">
         <nav class="header-navigation">
             <ul>
-                <li>Case Studies</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -39,8 +39,9 @@
         </div>
     </section>
 
-    <section class="project-container">
-    <section class="outer-container rolling stone container">
+    <section class="case-studies-container">
+
+        <div class="case-studies-content">
             <div class="text">
                 <h3>Rolling Stone</h3>
                 <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
@@ -49,11 +50,16 @@
                 <br>
                 <a href="view.project">View project</a>
             </div>
-            <div class="project-image"><img src="assets/work-image-01.jpeg" alt="Rolling Stone Image"></div>
-    </section>
+            <span class="image-wrapper">
+                <img src="assets/work-image-01.jpeg" alt="Rolling Stone Image">
+            </span>
+        </div>
 
-    <section class="outer-container variety container">
-        <div class="project-image"><img src="assets/work-image-02.jpeg" alt="Variety Image"></div>
+
+    <div class="case-studies-content">
+        <span class="image-wrapper">
+            <img src="assets/work-image-02.jpeg" alt="Variety Image">
+        </span>
         <div class="text">
             <h3>Variety</h3>
             <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
@@ -62,9 +68,9 @@
             <br>
             <a href="view.project">View project</a>
         </div>
-    </section>
+    </div>
 
-    <section class="outer-container worth container">
+    <div class="case-studies-content">
         <div class="text">
             <h3>Worth</h3>
             <img class="small-image" src="assets/squiggle_line.svg" alt="Squiggle line">
@@ -73,15 +79,18 @@
             <br>
             <a href="view.project">View project</a>
         </div>
-        <div class="project-image"><img src="assets/work-image-03.jpeg" alt="Worth Image"></div>
-    </section>
+        <span class="image-wrapper"><img src="assets/work-image-03.jpeg" alt="Worth Image"></span>
+    </div>
+
     </section>
 
-    <section class="outer-container block-items-container">
-        <div class="inner-container block-items-container">
+    <section class="outer-block-container">
+            <div class="inner-block-container">
             <div class="block-item">
                 <div class="image"><img src="assets/icon_web-design.svg" alt="Web Design Image"></div>
+                <section id="services">
                 <h4>Web Design</h4>
+                </section>
                 <p>Good web designs is how companies stand out from their competitors. High quality web designs leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line.</p>
             </div>
             <div class="block-item">
@@ -112,9 +121,9 @@
         </div>
     </section>
 
-
     <form class="outer-container form-container">
         <div class="inner-container form-inner">
+            <section id="contact-us">
         <h1>Let's work together</h1>
             <p>Have a question? Need a quote? Let us know!</p>
             <form onsubmit="form">
@@ -132,7 +141,7 @@
                 </div>
                 <button type="submit">Send</button>
             </form>
-
+            </section>
         </div>
     </form>
 </main>
