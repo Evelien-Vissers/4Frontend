@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 button {
     font-family: inherit;
-    font-size: 10px;
+    font-size: 12px;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
@@ -70,11 +70,13 @@ button {
     background-color: #ED4385;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 20px;
+    margin-bottom: 60px;
+    padding: 15px 30px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     align-self: center;
     display: block;
+    min-width: 150px;
 
 }
 input {
@@ -96,14 +98,13 @@ a {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    border: 2px solid black;
+
 }
 .inner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
-    border: 2px dashed deeppink;
 }
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -113,7 +114,9 @@ a {
     background: linear-gradient(to right, #4845E4, #5722CD);
     flex-direction: column;
     align-items: center;
+
 }
+
 .header-content {
     flex-direction: column;
     width: 600px;
@@ -158,6 +161,11 @@ a {
     margin-right: auto;
 }
 /* --------------- 4.2 Introduction ------------------- */
+.introduction-container {
+    padding-top: 70px;
+    background: white;
+}
+
 .introduction-inner {
     max-width: 800px;
     text-align: center;
@@ -181,6 +189,8 @@ a {
     text-align: left;
     align-items: flex-start;
     margin-top: 80px;
+    margin-bottom: 90px;
+    margin-left: 40px;
 }
 
 .project-container h3 {
@@ -188,7 +198,7 @@ a {
     font-size: 70px;
 }
 .text {
-    max-width: 300px;
+    max-width: 500px;
     text-align: left;
     align-items: center;
     padding: 50px;
@@ -198,11 +208,23 @@ a {
     height: auto;
     margin-left: 15px;
 }
+.view-project-link {
+    display: inline-block;
+    margin-left: 50px;
+}
+
 .image-wrapper {
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
 }
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
  /* -------------------------------6. Block Items ------------------------------*/
 .outer-block-container {
     padding: 30px;
@@ -237,16 +259,21 @@ a {
     justify-content: center;
     align-items: flex-start;
 }
-.block-item img {
+.block-item-img {
     max-width: 50px;
     max-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     margin-left: 20px;
-    margin-top: 10px;
 }
+
 .block-item h4 {
     color: #5722CD;
     font-size: 1rem;
+    font-weight: bold;
     text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .block-item p {
@@ -268,6 +295,10 @@ a {
     width: 1000px;
     padding: 20px;
     margin: 0 auto;
+}
+.form-inner h1 {
+    font-size: 40px;
+    margin-top: 50px;
 }
 .form-inner label {
     font-size: 12px;
